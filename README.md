@@ -1,13 +1,16 @@
 # INSTALLATION
 
+You need PHP 7.2
+
 Clone repository:
+
 `git clone https://github.com/pdandreyv/smsedge.git`
 
 Install by composer:
 
 `composer install`
 
-Edit .env file in root project folder - input datebase connection data
+Create .env file in root project folder from .env.example - input datebase connection data
 
 Create all need tables in datebase with default data:
 
