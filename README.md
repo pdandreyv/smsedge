@@ -1,23 +1,23 @@
-INSTALLATION
+# INSTALLATION
 
 Clone repository:
-git clone https://github.com/pdandreyv/smsedge.git
+`git clone https://github.com/pdandreyv/smsedge.git`
 
-// Install by composer
-composer install
+Install by composer
+`composer install`
 
-// Edit .env file in root project folder - input datebase connection data
+Edit .env file in root project folder - input datebase connection data
 
-// Create all need tables in datebase with default data
-php artisan migrate
+Create all need tables in datebase with default data
+`php artisan migrate`
 
-// Generate Numbers data by default 10, but optional parameter [count] create another count numbers data
-php artisan generate:number_data [count]
+Generate Numbers data by default 10, but optional parameter [count] create another count numbers data
+`php artisan generate:number_data [count]`
 
-// Generate Users data by default 100, but optional parameter [count] create another count users data. Created date will random by 5 last days.
-php artisan generate:user_data [count]
+Generate Users data by default 100, but optional parameter [count] create another count users data. Created date will random by 5 last days.
+`php artisan generate:user_data [count]`
 
-// Aggregate Users data to send_log_aggregated table. In future you can setup this command to cron by every day
-php artisan aggregate:send_log
+Aggregate Users data to send_log_aggregated table. In future you can setup this command to cron by every day
+`php artisan aggregate:send_log`
 
-// This is all enjoy the application.
+This is all enjoy the application.
