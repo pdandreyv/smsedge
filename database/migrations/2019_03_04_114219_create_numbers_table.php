@@ -15,8 +15,8 @@ class CreateNumbersTable extends Migration
     {
         Schema::create('numbers', function (Blueprint $table) {
             $table->increments('num_id');
-            $table->integer('cnt_id');
-            $table->boolean('num_number');
+            $table->integer('cnt_id')->unsigned();
+            $table->integer('num_number');
             $table->timestamps();
             $table->foreign('cnt_id')->references('cnt_id')->on('countries');
         });

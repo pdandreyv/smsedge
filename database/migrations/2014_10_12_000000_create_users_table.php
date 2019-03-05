@@ -19,15 +19,17 @@ class CreateUsersTable extends Migration
             $table->boolean('usr_active');
             $table->timestamps();
         });
+        
         $data = [];
         $names = ['Nike','Yuri','Mikhail','Mike','Tom','Andrey','Boris','Alexandr','Dima','Denis'];
         for($i=0;$i<10;$i++){
             $data[] = [
                 'usr_name' => $names[$i],
+                'usr_active' => 1
             ];
         }
         
-        DB::table('countries')->insert($data);
+        DB::table('users')->insert($data);
     }
 
     /**

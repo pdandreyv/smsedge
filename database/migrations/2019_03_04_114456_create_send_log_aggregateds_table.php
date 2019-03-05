@@ -15,11 +15,13 @@ class CreateSendLogAggregatedsTable extends Migration
     {
         Schema::create('send_log_aggregateds', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('usr_id');
-            $table->integer('num_id');
-            $table->string('log_message');
-            $table->boolean('log_success');
-            $table->timestamps();
+            $table->integer('usr_id')->unsigned();
+            $table->integer('cnt_id')->unsigned();
+            $table->integer('count_success');
+            $table->integer('count_failed');
+            $table->date('date_at');
+            $table->foreign('usr_id')->references('usr_id')->on('users');
+            $table->foreign('cnt_id')->references('cnt_id')->on('countries');
         });
     }
 

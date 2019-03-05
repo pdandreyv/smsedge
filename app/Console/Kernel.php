@@ -13,7 +13,9 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        Commands\generateUserData::class
+        Commands\generateUserData::class,
+        Commands\generateNumbersData::class,
+        Commands\aggregateLogs::class,
     ];
 
     /**

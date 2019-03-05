@@ -20,6 +20,7 @@ class CreateCountriesTable extends Migration
             $table->string('cnt_title');
             $table->timestamps();
         });
+        
         $data = [];
         $codes = ['RU','UA','US','EN','GB','BG','ND','SP','GR','CZ'];
         $titles = ['Russia','Ukrane','Unated States','England','Germany','Belgia','Niderland','Spain','Greece','Czech'];
