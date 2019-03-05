@@ -15,14 +15,14 @@ class generateUserData extends Command
      *
      * @var string
      */
-    protected $signature = 'generate:user_data {count=10}';
+    protected $signature = 'generate:user_data {count=100}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Generate by default 10 random users data';
+    protected $description = 'Generate by default 100 random users data';
 
     /**
      * Create a new command instance.
